@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: 21
+      java: latest
   pre_build:
     commands:
       - ACCOUNT_NUMBER=$(echo $CODEBUILD_BUILD_ARN | cut -f5 -d ':')
