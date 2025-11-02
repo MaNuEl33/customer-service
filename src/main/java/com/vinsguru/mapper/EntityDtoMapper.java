@@ -15,7 +15,7 @@ public class EntityDtoMapper {
     public static CustomerDto toDto(Customer customer, List<MovieDto> movies) {
         return new  CustomerDto(
                 customer.getId(),
-                customer.getName(),
+                customer.getName().toUpperCase(),
                 customer.getFavoriteGenre(),
                 movies
         );

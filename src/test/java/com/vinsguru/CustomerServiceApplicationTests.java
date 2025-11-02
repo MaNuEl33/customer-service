@@ -55,7 +55,7 @@ class CustomerServiceApplicationTests {
 
 		final var customerDto = responseEntity.getBody();
 		Assertions.assertNotNull(customerDto);
-		Assertions.assertEquals("sam", customerDto.name());
+		Assertions.assertEquals("SAM", customerDto.name());
 		Assertions.assertEquals(2, customerDto.recommendedMovies().size());
 	}
 
